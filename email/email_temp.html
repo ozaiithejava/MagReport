@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Oyuncu Raporu</title>
+<style>
+  /* Genel reset */
+  body, p, ol, li, h2, h3 {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7fa;
+    color: #444444;
+    line-height: 1.6;
+    padding: 20px;
+  }
+  .email-wrapper {
+    max-width: 600px;
+    margin: auto;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    border: 1px solid #e1e4e8;
+    overflow: hidden;
+  }
+  .header {
+    background: linear-gradient(90deg, #3498db, #2980b9);
+    color: white;
+    padding: 20px 30px;
+    text-align: center;
+  }
+  .header h2 {
+    font-weight: 700;
+    font-size: 24px;
+    letter-spacing: 1px;
+  }
+  .content {
+    padding: 25px 30px;
+  }
+  .info {
+    margin-bottom: 20px;
+  }
+  .info p {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+  .info strong {
+    color: #2980b9;
+  }
+  h3 {
+    color: #2980b9;
+    margin-bottom: 12px;
+    font-weight: 600;
+    font-size: 18px;
+    border-bottom: 2px solid #2980b9;
+    padding-bottom: 5px;
+  }
+  ol {
+    padding-left: 20px;
+    color: #555;
+    font-size: 15px;
+  }
+  ol li {
+    margin-bottom: 8px;
+  }
+  .footer {
+    background-color: #f9fafb;
+    text-align: center;
+    font-size: 13px;
+    color: #888;
+    padding: 15px 20px;
+    border-top: 1px solid #ddd;
+  }
+  /* Responsive */
+  @media only screen and (max-width: 620px) {
+    body {
+      padding: 10px;
+    }
+    .email-wrapper {
+      width: 100% !important;
+      border-radius: 0 !important;
+      box-shadow: none !important;
+      border: none !important;
+    }
+    .header, .content, .footer {
+      padding-left: 15px !important;
+      padding-right: 15px !important;
+    }
+  }
+</style>
+</head>
+<body>
+  <div class="email-wrapper" role="article" aria-roledescription="email" aria-label="Oyuncu Raporu">
+    <div class="header">
+      <h2>Oyuncu Raporu</h2>
+    </div>
+    <div class="content">
+      <div class="info">
+        <p><strong>Raporlayan:</strong> {reporter}</p>
+        <p><strong>Raporlanan:</strong> {target}</p>
+      </div>
+      <h3>Son Mesajlar</h3>
+      <ol>
+        {messages}
+      </ol>
+    </div>
+    <div class="footer">
+      Bu mesaj <em>MagReport</em> sistemi tarafından otomatik olarak gönderilmiştir.
+    </div>
+  </div>
+</body>
+</html>

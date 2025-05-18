@@ -1,0 +1,18 @@
+prefix: "&7[&5MagReport&7] "
+
+report:
+  usage: "&cKullanım: /report <oyuncu>"
+  cooldown: "&cBu komutu tekrar kullanabilmek için &e%seconds% &csaniye beklemelisin."
+  success: "&a%player% isimli oyuncu başarıyla raporlandı!"
+  error: "&cBir hata oluştu, lütfen daha sonra tekrar deneyin."
+  invalidColor: "&cGeçersiz renk kodu."
+  offlinePlayer: "&c%player% çevrimdışı veya bulunamadı."
+  nameTruncated: "&eOyuncu ismi çok uzundu, %name% olarak kesildi."
+  selfReport: "&cKendini raporlayamazsın!"
+  noMessages: "&cBu oyuncuya ait son mesajlar bulunamadı."
+  preview-title: "&aRapor hazırlandı: "
+  preview-button: "&d[Raporu Görüntüle]"
+  preview-hover: "&7Tıkla ve web üzerinden raporu görüntüle"
+email:
+  report_subject: "Yeni Oyuncu Raporu: %target%"
+  report_from_name: "MagReport - %reporter%"

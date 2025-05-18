@@ -1,0 +1,40 @@
+webserver:
+  port: 1337
+  enabled: true
+
+smtp:
+  username: "berkeyldrm2306@gmail.com"
+  password: "jxvg lxhk aqsu qpee"
+  host: "smtp.gmail.com"
+  port: 587
+  fromName: "Sunucu Rapor Sistemi"
+  toAddress: "berkeyldrm23@gmail.com"
+  enabled: true
+
+webhook:
+  enabled: false
+  url: "https://discord.com/api/webhooks/WEBHOOK_ID/WEBHOOK_TOKEN"
+  username: "MagReport Bot"
+  avatar_url: "https://example.com/avatar.png"
+  default_footer: "MagReport System"
+  default_author: "Report Module"
+  include_timestamp: true
+
+# Database connections settings
+mysql:
+  host: "localhost"        # MySQL sunucusunun adresi
+  port: 3306               # MySQL sunucusunun portu
+  database: "test"    # Veritabanı adı
+  username: "ozaii"        # Veritabanı kullanıcı adı (MySQL'de mevcut olmalı)
+  password: ""     # Verit
+# ---------------------------------------
+# Telegram Bot ayarları
+# ---------------------------------------
+telegram:
+  enabled: true           # Telegram mesajlarının gönderilip gönderilmeyeceği (true/false)
+  botToken: "7758761706:AAFU9R321xUW_OS3_EfWgNdhb0AaXnuSo_4"   # Telegram botunuzun API token'ı (botfather'dan alınır)
+  chatId: "-1002646344527"       # Mesajların gönderileceği Telegram chat ID'si (grup ya da kanal ID'si)
+  messageTitle: "📢 Yeni Rapor!"    # Telegram mesajlarının başlık kısmı (bold veya emoji olabilir)
+  messageFooter: "© MagReport System"  # Mesajların sonunda gösterilecek footer metni (genellikle telif vs.)
+  maxMessages: 5          # Telegram mesajında gösterilecek maksimum son mesaj sayısı
+  parseMode: "HTML"       # Mesajlarda HTML formatının kullanılacağı belirtir (HTML ya da Markdown olabilir)
