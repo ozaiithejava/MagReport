@@ -1,0 +1,18 @@
+prefix: "&7[&5MagReport&7] "
+
+report:
+  usage: "&cUsage: /report <player>"
+  cooldown: "&cYou must wait &e%seconds% &cbefore using this command again."
+  success: "&aPlayer %player% has been reported successfully!"
+  error: "&cAn error occurred, please try again later."
+  invalidColor: "&cInvalid color code."
+  offlinePlayer: "&c%player% is offline or could not be found."
+  nameTruncated: "&ePlayer name was too long, truncated to %name%."
+  selfReport: "&cYou cannot report yourself!"
+  noMessages: "&cNo recent messages found for this player."
+  preview-title: "&aReport ready: "
+  preview-button: "&d[View Report]"
+  preview-hover: "&7Click to view the report on the web"
+email:
+  report_subject: "New Player Report: %target%"
+  report_from_name: "MagReport - %reporter%"

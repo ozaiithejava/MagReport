@@ -1,0 +1,18 @@
+prefix: "&7[&5MagReport&7] "
+
+report:
+  usage: "&cVerwendung: /report <spieler>"
+  cooldown: "&cDu musst &e%seconds% &cSekunden warten, bevor du diesen Befehl erneut verwenden kannst."
+  success: "&aSpieler %player% wurde erfolgreich gemeldet!"
+  error: "&cEin Fehler ist aufgetreten, bitte versuche es später erneut."
+  invalidColor: "&cUngültiger Farbcode."
+  offlinePlayer: "&c%player% ist offline oder konnte nicht gefunden werden."
+  nameTruncated: "&eSpielername war zu lang, wurde zu %name% gekürzt."
+  selfReport: "&cDu kannst dich nicht selbst melden!"
+  noMessages: "&cKeine letzten Nachrichten für diesen Spieler gefunden."
+  preview-title: "&aBericht bereit: "
+  preview-button: "&d[Bericht anzeigen]"
+  preview-hover: "&7Klicke, um den Bericht im Web anzuzeigen"
+email:
+  report_subject: "Neuer Spielerbericht: %target%"
+  report_from_name: "MagReport - %reporter%"
